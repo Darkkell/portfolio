@@ -1,0 +1,74 @@
+---
+import NextJS from "../icons/NextJS.astro";
+const TAGS = {
+    NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: NextJS,
+  },
+}
+const PROJECTS = [
+    {
+        title: "Proyecto 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        link: "",
+        github: "",
+        image: "https://www.naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png",
+        tags: [TAGS.NEXT, TAGS.TAILWIND]
+    },
+    {
+        title: "Proyecto 2",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        link: "",
+        github: "",
+        image: "/",
+        tags: ['servlets','html','css']
+    },
+    {
+        title: "Proyecto 3",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        link: "",
+        github: "",
+        image: "/",
+        tags: ['NativeScript']
+    }
+]
+---
+
+<!-- <tag.icon class="size-4"/> -->
+{
+    PROJECTS.map(({title, description, image, tags}) =>(
+        <article class="pb-16">
+            <h3 class="text-2xl font-semibold text-blue-400/90 dark:text-blue-400/90 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul class="flex gap-x-2 flex-row mb-2">
+                {
+                    tags.map(tag => (
+                        <li>
+                            <span class={`
+                                    flex gap-x-2 rounded-full
+                                    text-xs
+                                    ${tag.class}
+                                    py-1 px-2
+                                    border border-white/10
+                                `}>
+                                {tag.name}
+                            </span>
+                        </li>
+                    ))
+                }
+            </ul>
+            <img
+                loading="lazy"
+                class="rounded shadow-2xl shadow-white/10 aspect-video"
+                src={image}
+                alt={`Captura de pantalla del proyecto ${title}`}
+                >
+        </article>
+    ))
+}
