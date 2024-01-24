@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import Badge from "../components/Badge.astro"
+import SocialPill from "../components/SocialPill.astro"
+import LinkedInIcon from "../icons/LinkedIn.astro"
+---
+
+<Layout
+    title="Design System portfolio.dev"
+    description="Catálogo de Componentes de nuestro Portfolio"
+>
+    <SectionContainer  class="py-44 pb-32 flex flex-col gap-y-10">
+        <article  class="mb-10">
+            <h1 class="mb-4 font-semibold">&lt;Badge/&gt;</h1>
+            <Badge>Disponible para trabajar</Badge>
+        </article>
+        <article  class="mb-10">
+            <h1 class="mb-4 font-semibold">&lt;SocialPill/&gt;</h1>
+            <div class="flex">
+                <SocialPill  href="https://www.linkedin.com/in/4lejandro/">
+                    <LinkedInIcon class="size-4 md:size-6"></LinkedInIcon>
+                    LinkedIn
+                </SocialPill>
+            </div>
+        </article>
+    </SectionContainer>
+</Layout>

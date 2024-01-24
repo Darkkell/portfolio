@@ -1,16 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
 // import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
-import LinkedInIcon from '../icons/LinkedIn.astro';
-import SocialPill from '../components/SocialPill.astro';
-import GitHubIcon from '../icons/GitHub.astro';
-import MailIcon from '../icons/Mail.astro';
-import Experience from '../components/Experience.astro';
-import SectionContainer from '../components/SectionContainer.astro';
 import BriefCaseIcon from '../icons/BriefCase.astro';
 import CodeIcon from '../icons/Code.astro';
+import Experience from '../components/Experience.astro';
+import GitHubIcon from '../icons/GitHub.astro';
+import Layout from '../layouts/Layout.astro';
+import LinkedInIcon from '../icons/LinkedIn.astro';
+import MailIcon from '../icons/Mail.astro';
+import ProfileIcon from '../icons/Profile.astro';
 import Projects from '../components/Projects.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SocialPill from '../components/SocialPill.astro';
+import AboutMe from '../components/AboutMe.astro';
 ---
 
 <Layout
@@ -18,7 +20,7 @@ title="Portfolio de Alejandro Flores | Desarrollador y Programador Web con 2 añ
 description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desarrollador Web y Mobile. Especializado en crear soluciones únicas."
 >
 	<main class="px-4">
-		<SectionContainer id="sobre-mi" class="py-44 pb-32">
+		<SectionContainer class="py-44 pb-32">
 			<!-- w-12 h-12 -->
 			<img
 				class="rounded-full w-16 mb-4"
@@ -27,7 +29,7 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 			/>
 			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hey, soy Alejandro
-				<a href="https://www.linkedin.com/in/4lejandro/" target="_blank"  rel="noopener" class="flex justify-center items-center">
+				<a href="https://www.linkedin.com/in/4lejandro/" target="_blank"  rel="noopener" class="flex justify-center items-center hover:scale-105 transition">
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
@@ -66,6 +68,14 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 				Proyectos
 			</h2>
 			<Projects/>
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<ProfileIcon class="size-7"></ProfileIcon>
+				Sobre mí
+			</h2>
+			<AboutMe/>
 		</SectionContainer>
 	</main>
 </Layout>
