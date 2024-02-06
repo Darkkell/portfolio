@@ -26,6 +26,7 @@ const TAGS = {
   },
   AWS: {
     name: "Amazon Web Services",
+    alias: "AWS",
     class: "bg-[#6A727D]",
     icon: AWS,
   },
@@ -66,11 +67,13 @@ const TAGS = {
   },
   JSP: {
     name: "Java Server Pages y Servlets",
+    alias:"JSP",
     class: "bg-[#373B4F]",
     icon: Java,
   },
   JWT: {
     name: "JSON Web Token",
+    alias:"JWT",
     class: "bg-black",
     icon: JWT,
   },
@@ -81,11 +84,13 @@ const TAGS = {
   },
   NEXT: {
     name: "Next.js",
+    alias: "Next",
     class: "bg-black",
     icon: NextJS,
   },
   NODE: {
     name: "Node.js",
+    alias: "Node",
     class: "bg-black",
     icon: NodeJS,
   },
@@ -96,6 +101,7 @@ const TAGS = {
   },
   TAILWIND: {
     name: "Tailwind CSS",
+    alias: "Tailwind",
     class: "bg-[#003159]",
     icon: TailwindCSS,
   },
@@ -127,16 +133,16 @@ const PROJECTS = [
     }
 ]
 ---
-<section class="flex flex-col gap-y-16">
+<div class="flex flex-col gap-y-16">
   {
       PROJECTS.map(({title, description, image, tags, link, github}) =>(
           <article class="pb-16">
               <h3 class="text-2xl font-semibold text-blue-400/90 dark:text-blue-400/90 mb-2">{title}</h3>
               <p class="text-lg mb-4 text-pretty">{description}</p>
-              <ul class="flex gap-x-2 flex-row mb-2">
+              <ul class="flex flex-wrap gap-x-2  mb-2">
                   {
                       tags.map((tag) => (
-                          <li>
+                          <li class="pt-1 pb-1">
                               <span class={`
                                   flex gap-x-2 rounded-full
                                   text-xs
@@ -176,4 +182,4 @@ const PROJECTS = [
           </article>
       ))
   }
-</section>
+</div>

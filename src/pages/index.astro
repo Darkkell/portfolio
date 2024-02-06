@@ -1,5 +1,6 @@
 ---
 // import Card from '../components/Card.astro';
+import AboutMe from '../components/AboutMe.astro';
 import Badge from '../components/Badge.astro';
 import BriefCaseIcon from '../icons/BriefCase.astro';
 import CodeIcon from '../icons/Code.astro';
@@ -12,7 +13,6 @@ import ProfileIcon from '../icons/Profile.astro';
 import Projects from '../components/Projects.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import SocialPill from '../components/SocialPill.astro';
-import AboutMe from '../components/AboutMe.astro';
 ---
 
 <Layout
@@ -27,15 +27,15 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 				src="https://avatars.githubusercontent.com/u/47506026"
 				alt="Alejandro photo"
 			/>
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+			<h1 class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hey, soy Alejandro
 				<a href="https://www.linkedin.com/in/4lejandro/" target="_blank"  rel="noopener" class="flex justify-center items-center hover:scale-105 transition">
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-				<span>+2 años de experiencia.</span><span class="text-blue-400/90"> Desarrollador Web y Mobile.</span>
-				<span class="text-gray-500/90"> De Morelos, México.</span><span class="opacity-70"> Especializado en crear soluciones únicas</span>
+			<h2 class="text-black dark:text-white text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span>+2 años de experiencia.</span><span class="text-blue-400 dark:text-blue-400/90"> Desarrollador Web y Mobile.</span>
+				<span class="text-gray-500 dark:text-gray-500/90"> De Morelos, México.</span><span class="opacity-70"> Especializado en crear soluciones únicas</span>
 			</h2>
 
 			<nav class="flex gap-4 mt-8 flex-wrap">
@@ -55,7 +55,7 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 		</SectionContainer>
 
 		<SectionContainer id="experiencia">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
 				<BriefCaseIcon class="size-7"></BriefCaseIcon>
 				Experiencia laboral
 			</h2>
@@ -63,7 +63,7 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 		</SectionContainer>
 
 		<SectionContainer id="proyectos">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
 				<CodeIcon class="size-7"></CodeIcon>
 				Proyectos
 			</h2>
@@ -71,7 +71,7 @@ description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desa
 		</SectionContainer>
 
 		<SectionContainer id="sobre-mi">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
 				<ProfileIcon class="size-7"></ProfileIcon>
 				Sobre mí
 			</h2>
