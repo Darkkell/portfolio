@@ -1,5 +1,13 @@
 # Astro to portfolio
 
+![Portfolio preview](/src/images/545shots_so.webp "Portfolio Preview")
+
+- how to run
+
+```sh
+npm run dev
+```
+
 - create project
 
 ```sh
