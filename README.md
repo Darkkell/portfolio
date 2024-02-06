@@ -1,4 +1,4 @@
-# Astro to portfolio
+# Portfolio made with Astro
 
 ![Portfolio preview](/src/images/545shots_so.webp "Portfolio Preview")
 
