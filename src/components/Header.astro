@@ -1,4 +1,5 @@
 ---
+import ThemeToogle from "./ThemeToogle.astro"
 const navItems =[
     {
         title: "experiencia"
@@ -39,6 +40,7 @@ class={`
             <a class="text-xs sm:text-sm md:text-base text-white hover:text-blue-400/90 active:text-violet-400/60 capitalize" href=`/#${base.label?base.label:base.title}`>{base.title}</a>
         ))
     }
+    <ThemeToogle/>
 </nav>
 
 </header>
