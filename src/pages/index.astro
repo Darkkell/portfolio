@@ -1,18 +1,13 @@
 ---
-// import Card from '../components/Card.astro';
 import AboutMe from '../components/AboutMe.astro';
-import Badge from '../components/Badge.astro';
 import BriefCaseIcon from '../icons/BriefCase.astro';
 import CodeIcon from '../icons/Code.astro';
 import Experience from '../components/Experience.astro';
-import GitHubIcon from '../icons/GitHub.astro';
 import Layout from '../layouts/Layout.astro';
-import LinkedInIcon from '../icons/LinkedIn.astro';
-import MailIcon from '../icons/Mail.astro';
 import ProfileIcon from '../icons/Profile.astro';
 import Projects from '../components/Projects.astro';
 import SectionContainer from '../components/SectionContainer.astro';
-import SocialPill from '../components/SocialPill.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout
@@ -20,38 +15,9 @@ title="Portfolio de Alejandro Flores | Desarrollador y Programador Web con 2 añ
 description="Contrata a Alejandro  para crear  ru aplicación web o móvil. Desarrollador Web y Mobile. Especializado en crear soluciones únicas."
 >
 	<main class="px-4">
-		<SectionContainer class="py-44 pb-32">
+		<SectionContainer class="py-16 md:py-36">
 			<!-- w-12 h-12 -->
-			<img
-				class="rounded-full w-16 mb-4"
-				src="https://avatars.githubusercontent.com/u/47506026"
-				alt="Alejandro photo"
-			/>
-			<h1 class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				Hey, soy Alejandro
-				<a href="https://www.linkedin.com/in/4lejandro/" target="_blank"  rel="noopener" class="flex justify-center items-center hover:scale-105 transition">
-					<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-black dark:text-white text-xl lg:text-2xl text-wrap max-w-[700px]">
-				<span>+2 años de experiencia.</span><span class="text-blue-400 dark:text-blue-400/90"> Desarrollador Web y Mobile.</span>
-				<span class="text-gray-500 dark:text-gray-500/90"> De Morelos, México.</span><span class="opacity-70"> Especializado en crear soluciones únicas</span>
-			</h2>
-
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<SocialPill  href="https://www.linkedin.com/in/4lejandro/">
-					<LinkedInIcon class="size-4 md:size-6"></LinkedInIcon>
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/Darkkell">
-					<GitHubIcon class="size-4 md:size-6"></GitHubIcon>
-					GitHub
-				</SocialPill>
-				<SocialPill  href="mailto:alejandro.flores.reyes@gmail.com">
-					<MailIcon class="size-4 md:size-6"></MailIcon>
-					email
-				</SocialPill>
-			</nav>
+			<Hero/>
 		</SectionContainer>
 
 		<SectionContainer id="experiencia">
