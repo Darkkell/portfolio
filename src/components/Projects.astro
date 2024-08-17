@@ -1,5 +1,6 @@
 ---
 import Angular from "../icons/Angular.astro";
+import Bootstrap from "../icons/Bootstrap.astro";
 import AWS from "../icons/AWS.astro";
 import CSS from "../icons/CSS.astro";
 import Docker from "../icons/Docker.astro";
@@ -7,8 +8,11 @@ import ExpressJS from "../icons/ExpressJS.astro";
 import Flutter from "../icons/Flutter.astro";
 import Git from "../icons/Git.astro";
 import GitHub from "../icons/GitHub.astro";
+import GitLab from "../icons/GitLab.astro";
 import HTML from "../icons/HTML.astro";
 import Java from "../icons/Java.astro";
+import JQuery from "../icons/JQuery.astro";
+import JS from "../icons/JS.astro";
 import JWT from "../icons/JWT.astro";
 import LinkButton from "./LinkButton.astro";
 import NativeScript from "../icons/NativeScript.astro";
@@ -16,7 +20,8 @@ import NextJS from "../icons/NextJS.astro";
 import NodeJS from "../icons/NodeJS.astro";
 import Sequelize from "../icons/Sequelize.astro";
 import TailwindCSS from "../icons/TailwindCSS.astro";
-import Web from "../icons/Web.astro"
+import Vue from "../icons/Vue.astro";
+import Web from "../icons/Web.astro";
 
 const TAGS = {
   ANGULAR: {
@@ -29,6 +34,12 @@ const TAGS = {
     alias: "AWS",
     class: "bg-[#6A727D]",
     icon: AWS,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    alias: "Bootstrap",
+    class: "bg-[#003159]",
+    icon: Bootstrap,
   },
   CSS: {
     name: "CSS",
@@ -60,20 +71,37 @@ const TAGS = {
     class: "bg-black",
     icon: GitHub,
   },
+  GITLAB: {
+    name: "GitLab",
+    class: "bg-black",
+    icon: GitLab,
+  },
   HTML: {
     name: "HTML",
     class: "bg-[#003159]",
     icon: HTML,
   },
+  JQUERY: {
+    name: "JQuery",
+    alias: "jQuery",
+    class: "bg-[#003159]",
+    icon: JQuery,
+  },
+  JS: {
+    name: "JavaScript",
+    alias: "JS",
+    class: "bg-[#003159]",
+    icon: JS,
+  },
   JSP: {
     name: "Java Server Pages y Servlets",
-    alias:"JSP",
+    alias: "JSP",
     class: "bg-[#373B4F]",
     icon: Java,
   },
   JWT: {
     name: "JSON Web Token",
-    alias:"JWT",
+    alias: "JWT",
     class: "bg-black",
     icon: JWT,
   },
@@ -105,81 +133,178 @@ const TAGS = {
     class: "bg-[#003159]",
     icon: TailwindCSS,
   },
-}
+  VUE: {
+    name: "Vue",
+    alias: "Vue",
+    class: "bg-black",
+    icon: Vue,
+  },
+};
 const PROJECTS = [
-    {
-        title: "Proyecto 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        link: "https://www.linkedin.com/in/4lejandro/",
-        github: "https://www.linkedin.com/in/4lejandro/",
-        image: "https://www.naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png",
-        tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FLUTTER, TAGS.GIT, TAGS.GITHUB]
-    },
-    {
-        title: "Proyecto 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        link: "",
-        github: "",
-        image: "/",
-        tags: [TAGS.JSP,TAGS.HTML,TAGS.CSS, TAGS.JWT, TAGS.NODE]
-    },
-    {
-        title: "Proyecto 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        link: "",
-        github: "",
-        image: "/",
-        tags: [TAGS.NATIVESCRIPT, TAGS.ANGULAR, TAGS.AWS, TAGS.DOCKER, TAGS.EXPRESS]
-    }
-]
+  {
+    title: "Proyecto 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://www.linkedin.com/in/4lejandro/",
+    github: "https://www.linkedin.com/in/4lejandro/",
+    image:
+      "https://www.naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FLUTTER, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    title: "Quickly v1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "",
+    github: "",
+    image: "https://www.dev1992.com/mockups/quickly_v1/1.webp",
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+      TAGS.JQUERY,
+      TAGS.GIT,
+      TAGS.GITLAB,
+    ],
+  },
+  {
+    title: "Quickly v2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "",
+    github: "",
+    image: "https://www.dev1992.com/mockups/quickly_v2/1.webp",
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+      TAGS.JQUERY,
+      TAGS.GIT,
+      TAGS.GITLAB,
+    ],
+  },
+  {
+    title: "IQ INVER",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "",
+    github: "",
+    image: "https://www.dev1992.com/mockups/iq_inver/2_1.webp",
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+      TAGS.JQUERY,
+      TAGS.GIT,
+      TAGS.GITLAB,
+    ],
+  },
+  {
+    title: "IQ JURÍDICO",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "",
+    github: "",
+    image: "https://www.dev1992.com/mockups/iq_juridico/3_1.webp",
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+      TAGS.JQUERY,
+      TAGS.GIT,
+      TAGS.GITLAB,
+    ],
+  },
+  {
+    title: "Pokedex",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/pokedex/",
+    github: "https://github.com/Darkkell/vuepoke",
+    image: "https://www.dev1992.com/mockups/pokedex/4_1.webp",
+    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    title: "Pomodoro",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/pomodoro/",
+    github: "https://github.com/Darkkell/vanilla-pomodoro",
+    image: "https://www.dev1992.com/mockups/pomodoro/1_1.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    title: "Productivity v0.0.1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/productivity/",
+    github: "",
+    image: "https://www.dev1992.com/mockups/productivity/1.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    title: "Shorty",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/shorty/#/",
+    github: "",
+    image: "https://www.dev1992.com/mockups/shorty/1.1_1.webp",
+    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+  },
+];
 ---
+
 <div class="flex flex-col gap-y-16">
   {
-      PROJECTS.map(({title, description, image, tags, link, github}) =>(
-          <article class="pb-16">
-              <h3 class="text-2xl font-semibold text-blue-400/90 dark:text-blue-400/90 mb-2">{title}</h3>
-              <p class="text-lg mb-4 text-pretty">{description}</p>
-              <ul class="flex flex-wrap gap-x-2  mb-2">
-                  {
-                      tags.map((tag) => (
-                          <li class="pt-1 pb-1">
-                              <span class={`
+    PROJECTS.map(({ title, description, image, tags, link, github }) => (
+      <article class="pb-16">
+        <h3 class="text-2xl font-semibold text-blue-400/90 dark:text-blue-400/90 mb-2">
+          {title}
+        </h3>
+        <p class="text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex flex-wrap gap-x-2  mb-2">
+          {tags.map((tag) => (
+            <li class="pt-1 pb-1">
+              <span
+                class={`
                                   flex gap-x-2 rounded-full
                                   text-xs
                                   ${tag.class} text-white
                                   py-1 px-2
                                   border border-white/10
-                                  `}>
-                                  <tag.icon class="size-4"/>
-                                  {tag.name}
-                              </span>
-                          </li>
-                      ))
-                  }
-              </ul>
-              <img
-                  loading="lazy"
-                  class="rounded shadow-2xl shadow-white/10 aspect-video"
-                  src={image}
-                  alt={`Captura de pantalla del proyecto ${title}`}
-                  />
-              <footer class="flex gap-x-4 items-end justify-start mt-4">
-                {
-                  github &&
-                  <LinkButton href={github}>
-                    <GitHub class="size-6"/>
-                    Ver código fuente
-                  </LinkButton>
-                }
-                {
-                  link &&
-                  <LinkButton  href={link} >
-                    <Web class="size-6"/>
-                    Ir al sitio web
-                  </LinkButton>
-                }
-              </footer>
-          </article>
-      ))
+                                  `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10 aspect-auto"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+        <footer class="flex gap-x-4 items-end justify-start mt-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Ver código fuente
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Web class="size-6" />
+              Ir al sitio web
+            </LinkButton>
+          )}
+        </footer>
+      </article>
+    ))
   }
 </div>
