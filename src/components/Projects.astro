@@ -20,13 +20,14 @@ import NextJS from "../icons/NextJS.astro";
 import NodeJS from "../icons/NodeJS.astro";
 import Sequelize from "../icons/Sequelize.astro";
 import TailwindCSS from "../icons/TailwindCSS.astro";
+import TypeScript from "../icons/TypeScript.astro";
 import Vue from "../icons/Vue.astro";
 import Web from "../icons/Web.astro";
 
 const TAGS = {
   ANGULAR: {
     name: "Angular",
-    class: "bg-[#003159]",
+    class: "bg-[#0f0f11]",
     icon: Angular,
   },
   AWS: {
@@ -133,10 +134,16 @@ const TAGS = {
     class: "bg-[#003159]",
     icon: TailwindCSS,
   },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    alias: "TS",
+    class: "bg-[#003159]",
+    icon: TypeScript,
+  },
   VUE: {
     name: "Vue",
     alias: "Vue",
-    class: "bg-black",
+    class: "bg-[#160e3e]",
     icon: Vue,
   },
 };
@@ -147,8 +154,9 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "https://www.linkedin.com/in/4lejandro/",
     github: "https://www.linkedin.com/in/4lejandro/",
-    image:
+    image: [
       "https://www.naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png",
+    ],
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FLUTTER, TAGS.GIT, TAGS.GITHUB],
   },
   {
@@ -157,7 +165,13 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "",
     github: "",
-    image: "https://www.dev1992.com/mockups/quickly_v1/1.webp",
+    image: [
+      "https://www.dev1992.com/mockups/quickly_v1/1.webp",
+      "https://www.dev1992.com/mockups/quickly_v1/2.webp",
+      "https://www.dev1992.com/mockups/quickly_v1/3.webp",
+      "https://www.dev1992.com/mockups/quickly_v1/4.webp",
+      "https://www.dev1992.com/mockups/quickly_v1/5.webp",
+    ],
     tags: [
       TAGS.HTML,
       TAGS.CSS,
@@ -174,7 +188,14 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "",
     github: "",
-    image: "https://www.dev1992.com/mockups/quickly_v2/1.webp",
+    image: [
+      "https://www.dev1992.com/mockups/quickly_v2/1.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/2.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/3.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/4_1.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/5.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/6.webp",
+    ],
     tags: [
       TAGS.HTML,
       TAGS.CSS,
@@ -191,7 +212,16 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "",
     github: "",
-    image: "https://www.dev1992.com/mockups/iq_inver/2_1.webp",
+    image: [
+      "https://www.dev1992.com/mockups/iq_inver/2_1.webp",
+      "https://www.dev1992.com/mockups/iq_inver/3.webp",
+      "https://www.dev1992.com/mockups/iq_inver/4.webp",
+      "https://www.dev1992.com/mockups/iq_inver/5.webp",
+      "https://www.dev1992.com/mockups/iq_inver/6.webp",
+      // "https://www.dev1992.com/mockups/iq_inver/7.webp",
+      // "https://www.dev1992.com/mockups/iq_inver/8.webp",
+      "https://www.dev1992.com/mockups/iq_inver/10.webp",
+    ],
     tags: [
       TAGS.HTML,
       TAGS.CSS,
@@ -208,7 +238,13 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "",
     github: "",
-    image: "https://www.dev1992.com/mockups/iq_juridico/3_1.webp",
+    image: [
+      "https://www.dev1992.com/mockups/iq_juridico/1.webp",
+      "https://www.dev1992.com/mockups/iq_juridico/2.webp",
+      "https://www.dev1992.com/mockups/iq_juridico/3.webp",
+      "https://www.dev1992.com/mockups/iq_juridico/4.webp",
+      "https://www.dev1992.com/mockups/iq_juridico/5.webp",
+    ],
     tags: [
       TAGS.HTML,
       TAGS.CSS,
@@ -220,13 +256,52 @@ const PROJECTS = [
     ],
   },
   {
-    title: "Shorty",
+    title: "Upharma",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "https://dev1992.com/shorty/#/",
+    link: "",
     github: "",
-    image: "https://www.dev1992.com/mockups/shorty/1.1_1.webp",
-    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+    image: [
+      // "https://www.dev1992.com/mockups/upharma/1_1.webp",
+      // "https://www.dev1992.com/mockups/upharma/3_2.webp",
+      // "https://www.dev1992.com/mockups/upharma/4_1_1.webp",
+      // "https://www.dev1992.com/mockups/upharma/4_2.webp",
+      // "https://www.dev1992.com/mockups/upharma/5_1.webp",
+      "https://www.dev1992.com/mockups/upharma/6_1.webp",
+    ],
+    tags: [
+      TAGS.ANGULAR,
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.TYPESCRIPT,
+      TAGS.BOOTSTRAP,
+      TAGS.JWT,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
+  {
+    title: "UFree",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/ufree/#/",
+    github: "",
+    image: [
+      "https://www.dev1992.com/mockups/ufree/1_1.webp",
+      // "https://www.dev1992.com/mockups/ufree/2_1.webp",
+      // "https://www.dev1992.com/mockups/ufree/3_1.webp",
+      // "https://www.dev1992.com/mockups/ufree/4_1.webp",
+    ],
+    tags: [
+      TAGS.ANGULAR,
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.TYPESCRIPT,
+      TAGS.BOOTSTRAP,
+      TAGS.JQUERY,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
   },
   {
     title: "Pomodoro",
@@ -234,7 +309,7 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "https://dev1992.com/pomodoro/",
     github: "https://github.com/Darkkell/vanilla-pomodoro",
-    image: "https://www.dev1992.com/mockups/pomodoro/1_1.webp",
+    image: ["https://www.dev1992.com/mockups/pomodoro/1_1.webp"],
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
   },
   {
@@ -243,7 +318,7 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "https://dev1992.com/productivity/",
     github: "",
-    image: "https://www.dev1992.com/mockups/productivity/1.webp",
+    image: ["https://www.dev1992.com/mockups/productivity/5.webp"],
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
   },
   {
@@ -252,7 +327,16 @@ const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     link: "https://dev1992.com/pokedex/",
     github: "https://github.com/Darkkell/vuepoke",
-    image: "https://www.dev1992.com/mockups/pokedex/4_1.webp",
+    image: ["https://www.dev1992.com/mockups/pokedex/4_1.webp"],
+    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    title: "Shorty",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/shorty/#/",
+    github: "",
+    image: ["https://www.dev1992.com/mockups/shorty/1.1_1.webp"],
     tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
   },
 ];
@@ -284,12 +368,18 @@ const PROJECTS = [
             </li>
           ))}
         </ul>
-        <img
-          loading="lazy"
-          class="rounded shadow-2xl shadow-white/10 aspect-auto"
-          src={image}
-          alt={`Captura de pantalla del proyecto ${title}`}
-        />
+        {image && (
+          <section>
+            {image.map((image) => (
+              <img
+                loading="lazy"
+                class="rounded shadow-2xl shadow-white/10 aspect-auto"
+                src={image}
+                alt={`Captura de pantalla del proyecto ${title}`}
+              />
+            ))}
+          </section>
+        )}
         <footer class="flex gap-x-4 items-end justify-start mt-4">
           {github && (
             <LinkButton href={github}>
@@ -308,3 +398,23 @@ const PROJECTS = [
     ))
   }
 </div>
+
+<style>
+  section {
+    display: flex;
+    min-height: 40rem;
+  }
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  section img:hover {
+    cursor: crosshair;
+    width: 80%;
+    opacity: 1;
+    /* filter: contrast(120%); */
+  }
+</style>
