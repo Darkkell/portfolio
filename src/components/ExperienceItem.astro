@@ -1,30 +1,56 @@
 ---
-import ArrowIcon from '../icons/Arrow.astro'
-import LinkButton from './LinkButton.astro'
+import ArrowIcon from "../icons/Arrow.astro";
+import LinkButton from "./LinkButton.astro";
 
-interface Props  {
-    date:  string
-    title: string
-    description: string
-    link?: string
+interface Props {
+    date: string;
+    title: string;
+    company?: string;
+    description: string;
+    link?: string;
 }
-const  { date, title, description, link } = Astro.props
+const { date, title, company, description, link } = Astro.props;
 ---
-<div class="absolute size-3  rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-white dark:border-gray-900 dark:bg-white">
+
+<div
+    class="absolute size-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-white dark:border-gray-900 dark:bg-white"
+>
 </div>
-<time class="mb-1 text-sm font-normal leading-none text-purple-950 dark:text-purple-400/60">
-    {date}
-</time>
-<h3 class="text-lg font-semibold text-blue-400/90 dark:text-blue-400/90 mt-2">
-    {title}
-</h3>
-<p class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 text-pretty">
-    {description}
-</p>
-{
-    link && (
-        <LinkButton href ={ link }>
-            Saber Más...{' '}
-            <ArrowIcon></ArrowIcon>
-        </LinkButton>)
-}
+
+<div
+    class="relative mx-12 pb-12 grid before:absolute before:block before:h-full md:grid-cols-5 md:gap-10 md:space-x-4]">
+    <div class="relative pb-12 md:col-span-2">
+        <div class="sticky top-0">
+            <time
+                class="mb-1 text-sm font-normal leading-none text-purple-950 dark:text-purple-400/60"
+            >
+                {date}
+            </time>
+            <h3
+                class="text-xl font-semibold text-blue-400/90 dark:text-blue-400/90 mt-2"
+            >
+                {title}
+            </h3>
+            <h4 class="fint-semibold text-gl text-gray-600 dark:text-white">
+                {company}
+            </h4>
+        </div>
+    </div>
+
+    <div
+        class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
+    >
+        <p
+            class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 text-pretty"
+        >
+            {description}
+        </p>
+        {
+            link && (
+                <LinkButton href={link}>
+                    Saber Más... <ArrowIcon />
+                </LinkButton>
+            )
+        }
+    </div>
+</div>
