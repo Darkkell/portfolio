@@ -6,5 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://www.dev1992.com/',
   base: '/portfolio',
-  integrations: [tailwind()]
+  integrations: [tailwind({
+    nesting:true,
+  })]
 });

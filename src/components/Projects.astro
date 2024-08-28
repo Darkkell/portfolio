@@ -14,10 +14,12 @@ import Java from "../icons/Java.astro";
 import JQuery from "../icons/JQuery.astro";
 import JS from "../icons/JS.astro";
 import JWT from "../icons/JWT.astro";
+import Laravel from "../icons/Laravel.astro";
 import LinkButton from "./LinkButton.astro";
 import NativeScript from "../icons/NativeScript.astro";
 import NextJS from "../icons/NextJS.astro";
 import NodeJS from "../icons/NodeJS.astro";
+import Plesk from "../icons/Plesk.astro";
 import Sequelize from "../icons/Sequelize.astro";
 import TailwindCSS from "../icons/TailwindCSS.astro";
 import TypeScript from "../icons/TypeScript.astro";
@@ -106,6 +108,12 @@ const TAGS = {
     class: "bg-black",
     icon: JWT,
   },
+  LARAVEL: {
+    name: "Laravel",
+    alias: "Laravel",
+    class: "bg-black",
+    icon: Laravel,
+  },
   NATIVESCRIPT: {
     name: "NativeScript",
     class: "bg-[#6A727D]",
@@ -122,6 +130,12 @@ const TAGS = {
     alias: "Node",
     class: "bg-black",
     icon: NodeJS,
+  },
+  PLESK:{
+    name: "Plesk",
+    alias: "Plesk",
+    class: "bg-[#003159]",
+    icon: Plesk,
   },
   SEQUELIZE: {
     name: "Sequelize",
@@ -148,17 +162,6 @@ const TAGS = {
   },
 };
 const PROJECTS = [
-  {
-    title: "Proyecto 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "https://www.linkedin.com/in/4lejandro/",
-    github: "https://www.linkedin.com/in/4lejandro/",
-    image: [
-      "https://www.naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png",
-    ],
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FLUTTER, TAGS.GIT, TAGS.GITHUB],
-  },
   {
     title: "Quickly v1",
     description:
@@ -191,8 +194,8 @@ const PROJECTS = [
     image: [
       "https://www.dev1992.com/mockups/quickly_v2/1.webp",
       "https://www.dev1992.com/mockups/quickly_v2/2.webp",
-      "https://www.dev1992.com/mockups/quickly_v2/3.webp",
-      "https://www.dev1992.com/mockups/quickly_v2/4_1.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/3_1.webp",
+      "https://www.dev1992.com/mockups/quickly_v2/4.webp",
       "https://www.dev1992.com/mockups/quickly_v2/5.webp",
       "https://www.dev1992.com/mockups/quickly_v2/6.webp",
     ],
@@ -204,6 +207,7 @@ const PROJECTS = [
       TAGS.JQUERY,
       TAGS.GIT,
       TAGS.GITLAB,
+      TAGS.PLESK
     ],
   },
   {
@@ -213,13 +217,13 @@ const PROJECTS = [
     link: "",
     github: "",
     image: [
-      "https://www.dev1992.com/mockups/iq_inver/2_1.webp",
+      "https://www.dev1992.com/mockups/iq_inver/2.webp",
       "https://www.dev1992.com/mockups/iq_inver/3.webp",
       "https://www.dev1992.com/mockups/iq_inver/4.webp",
       "https://www.dev1992.com/mockups/iq_inver/5.webp",
       "https://www.dev1992.com/mockups/iq_inver/6.webp",
-      // "https://www.dev1992.com/mockups/iq_inver/7.webp",
-      // "https://www.dev1992.com/mockups/iq_inver/8.webp",
+      "https://www.dev1992.com/mockups/iq_inver/7.webp",
+      "https://www.dev1992.com/mockups/iq_inver/8.webp",
       "https://www.dev1992.com/mockups/iq_inver/10.webp",
     ],
     tags: [
@@ -255,6 +259,25 @@ const PROJECTS = [
       TAGS.GITLAB,
     ],
   },
+    {
+    title: "CP API",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    link: "https://dev1992.com/cp-api/public/",
+    github: "",
+    image: [
+      "https://www.dev1992.com/mockups/api_cp/3.webp",
+      "https://www.dev1992.com/mockups/api_cp/2.webp",
+      "https://www.dev1992.com/mockups/api_cp/3_1.webp",
+      "https://www.dev1992.com/mockups/api_cp/2_1.webp",
+    ],
+    tags: [
+      TAGS.LARAVEL,
+      TAGS.TAILWIND,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
   {
     title: "Upharma",
     description:
@@ -262,11 +285,11 @@ const PROJECTS = [
     link: "",
     github: "",
     image: [
-      // "https://www.dev1992.com/mockups/upharma/1_1.webp",
-      // "https://www.dev1992.com/mockups/upharma/3_2.webp",
-      // "https://www.dev1992.com/mockups/upharma/4_1_1.webp",
-      // "https://www.dev1992.com/mockups/upharma/4_2.webp",
-      // "https://www.dev1992.com/mockups/upharma/5_1.webp",
+      "https://www.dev1992.com/mockups/upharma/1.webp",
+      "https://www.dev1992.com/mockups/upharma/3_2.webp",
+      "https://www.dev1992.com/mockups/upharma/4_1.webp",
+      "https://www.dev1992.com/mockups/upharma/4_2.webp",
+      "https://www.dev1992.com/mockups/upharma/5_1.webp",
       "https://www.dev1992.com/mockups/upharma/6_1.webp",
     ],
     tags: [
@@ -283,14 +306,14 @@ const PROJECTS = [
   {
     title: "UFree",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Nació como una iniciativa para compartir de manera sencilla y concentrada cursos de udemy con códigos promocionales para su canje. Se creo el sitio web con Angular, el backend con PHP, la app móvil con NativeScript y se publicó en Samsung Store.",
     link: "https://dev1992.com/ufree/#/",
     github: "",
     image: [
-      "https://www.dev1992.com/mockups/ufree/1_1.webp",
-      // "https://www.dev1992.com/mockups/ufree/2_1.webp",
-      // "https://www.dev1992.com/mockups/ufree/3_1.webp",
-      // "https://www.dev1992.com/mockups/ufree/4_1.webp",
+      "https://www.dev1992.com/mockups/ufree/1.webp",
+      "https://www.dev1992.com/mockups/ufree/2.webp",
+      "https://www.dev1992.com/mockups/ufree/3.webp",
+      "https://www.dev1992.com/mockups/ufree/4.webp",
     ],
     tags: [
       TAGS.ANGULAR,
@@ -306,42 +329,83 @@ const PROJECTS = [
   {
     title: "Pomodoro",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Web App de gestión de tiempo para mejorar la productividad con la técnica Pomodoro. Personaliza cada sesión para encontrar tu ritmo ideal y combatir la procrastinación.",
     link: "https://dev1992.com/pomodoro/",
     github: "https://github.com/Darkkell/vanilla-pomodoro",
-    image: ["https://www.dev1992.com/mockups/pomodoro/1_1.webp"],
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+    image: [
+      "https://www.dev1992.com/mockups/pomodoro/1.webp"
+    ],
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.GIT,
+      TAGS.GITHUB
+    ],
   },
   {
     title: "Productivity v0.0.1",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Productivity ha evolucionado para ofrecerte una experiencia aún más personalizada. Además de las funcionalidades de Pomodoro, listas de tareas y clima, ahora incluye almacenamiento local para guardar tus datos. En futuras versiones, planeamos agregar inicio de sesión, respaldo en la nube y local para una mayor seguridad y flexibilidad.",
     link: "https://dev1992.com/productivity/",
     github: "",
-    image: ["https://www.dev1992.com/mockups/productivity/5.webp"],
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
-  },
-  {
-    title: "Pokedex",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "https://dev1992.com/pokedex/",
-    github: "https://github.com/Darkkell/vuepoke",
-    image: ["https://www.dev1992.com/mockups/pokedex/4_1.webp"],
-    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+    image: [
+      "https://www.dev1992.com/mockups/productivity/5.webp",
+      "https://www.dev1992.com/mockups/productivity/4.webp",
+      "https://www.dev1992.com/mockups/productivity/3.webp",
+    ],
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.GIT,
+      TAGS.GITHUB
+    ],
   },
   {
     title: "Shorty",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Es un acortador de enlace que genera un código QR de la URL personalizada.",
     link: "https://dev1992.com/shorty/#/",
     github: "",
-    image: ["https://www.dev1992.com/mockups/shorty/1.1_1.webp"],
-    tags: [TAGS.VUE, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.GIT, TAGS.GITHUB],
+    image: [
+      "https://www.dev1992.com/mockups/shorty/1.1.webp",
+      "https://www.dev1992.com/mockups/shorty/2.webp",
+      "https://www.dev1992.com/mockups/shorty/3.webp",
+      "https://www.dev1992.com/mockups/shorty/4.webp",
+    ],
+    tags: [
+      TAGS.VUE,
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.GIT,
+      TAGS.GITHUB
+    ],
+  },
+  {
+    title: "Pokedex",
+    description:
+      "Inspirado en las clásicas cartas de Pokémon, me propuse reimaginar la Pokédex con un diseño original. Fue así como creé una versión personalizada, fusionando nostalgia y creatividad.",
+    link: "https://dev1992.com/pokedex/",
+    github: "https://github.com/Darkkell/vuepoke",
+    image: [
+      "https://www.dev1992.com/mockups/pokedex/1.webp",
+      "https://www.dev1992.com/mockups/pokedex/2.webp",
+      "https://www.dev1992.com/mockups/pokedex/3.webp",
+       "https://www.dev1992.com/mockups/pokedex/4.webp"
+    ],
+    tags: [
+      TAGS.VUE,
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.GIT,
+      TAGS.GITHUB
+    ],
   },
 ];
 ---
-
 <div class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ title, description, image, tags, link, github }) => (
@@ -369,6 +433,13 @@ const PROJECTS = [
           ))}
         </ul>
         {image && (
+          <img
+            loading="lazy"
+            class="rounded shadow-2xl shadow-white/10 aspect-auto"
+            src={`${image[0]}`}
+            alt={`Seleccionado de pantalla del proyecto ${title}`}
+            id={`${title}`}
+          />
           <section>
             {image.map((image) => (
               <img
@@ -376,6 +447,8 @@ const PROJECTS = [
                 class="rounded shadow-2xl shadow-white/10 aspect-auto"
                 src={image}
                 alt={`Captura de pantalla del proyecto ${title}`}
+                id={`${title}-${image}`}
+                data-image
               />
             ))}
           </section>
@@ -399,22 +472,31 @@ const PROJECTS = [
   }
 </div>
 
+<script>
+  const images = document.querySelectorAll('[data-image]');
+  images.forEach((image) => {
+    image.addEventListener('click', () => {
+      const idImage = image.id.split(`-`)[0];
+      const newSrc = image.id.split(`-`)[1];
+      const imageChanged = document.getElementById(`${idImage}`);
+      (imageChanged as HTMLImageElement).src = newSrc;
+    })
+  })
+</script>
+
 <style>
   section {
     display: flex;
-    min-height: 40rem;
+    flex-wrap: wrap;
+    /* min-height: 40rem; */
   }
   section img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
+    width: 5rem;
     opacity: 0.8;
-    transition: 0.5s ease;
+    margin: 7px 5px 0 0;
   }
   section img:hover {
     cursor: crosshair;
-    width: 80%;
     opacity: 1;
-    /* filter: contrast(120%); */
   }
 </style>
